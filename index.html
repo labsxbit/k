@@ -1,360 +1,141 @@
-<!--
-
-Theme: Education
-Website: XBit Labs xbitlabs.in
-
--->
 <!DOCTYPE html>
 <html>
-
 <head>
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3703240694800655"
-     crossorigin="anonymous"></script>
-  <script src="script_timer.js"></script>
-
-  <title>xbitlabs.in</title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="style.css">
-
-  <style>
-    .copyright {
-      float: right;
-    }
-
-    .mySlides {
-      display: none;
-    }
-  </style>
-
-  <script>
-
-    var slideIndex = 1;
-
-    function plusDivs(n) {
-      showDivs(slideIndex += n);
-    }
-
-    function showDivs(n) {
-      var i;
-      var x = document.getElementsByClassName("mySlides");
-      if (n > x.length) { slideIndex = 1; }
-      if (n < 1) { slideIndex = x.length; }
-      for (i = 0; i < x.length; i++) {
-        x[i].style.display = "none";
-      }
-      x[slideIndex - 1].style.display = "block";
-    }
-
-
-  </script>
+<title>K Photos xbitlabs.in</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1 {font-family: "Montserrat", sans-serif}
+img {margin-bottom: -7px}
+.w3-row-padding img {margin-bottom: 12px}
+</style>
 </head>
-
 <body>
-  <h1 align='center'>
 
-    </h1>
-  <p>
-    .
-    </p>
 
-  <!-- Navbar (top) -->
-  <div class="w3-top">
-    <div class="w3-bar w3-white w3-padding w3-card w3-grey" style="letter-spacing: 4px;">
-      <a href="#home" class="w3-bar-item w3-button">XBit Labs - xbitlabs.in</a>
 
-      <!-- To right -->
-      <div class="w3-right w3-hide-small">
-        <a href="#" class="w3-bar-item w3-button w3-text-indigo">Home</a>
-        <a href="#" class="w3-bar-item w3-button w3-text-indigo">About</a>
-        <a href="#tutorial" class="w3-bar-item w3-button w3-text-indigo">tutorials</a>
-        <a href="#service" class="w3-bar-item w3-button w3-text-indigo">Services</a>
-        <a href="http://blog.xbitlabs.in" class="w3-bar-item w3-button w3-text-indigo">Blog</a>
-        <a href="#contact" class="w3-bar-item w3-button w3-text-indigo">Contact</a>
-      </div>
-    </div>
+
+<!-- Sidebar -->
+<nav class="w3-sidebar w3-black w3-animate-top w3-xxlarge" style="display:none;padding-top:150px" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-black w3-xxlarge w3-padding w3-display-topright" style="padding:6px 24px">
+    <i class="fa fa-remove"></i>
+  </a>
+  <div class="w3-bar-block w3-center">
+    <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black">About</a>
+    <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Photos</a>
+    <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Shop</a>
+    <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Contact</a>
+  </div>
+</nav>
+
+<div class="w3-bar w3-card">
+
+  <a href="#home" class="w3-bar-item w3-button">XBit Labs - xbitlabs.in</a>
+
+  <!-- To right -->
+  <div class="w3-right w3-hide-small">
+    <a href="http://www.xbitlabs.in/#" class="w3-bar-item w3-button w3-text-indigo">Home</a>
+    <a href="http://www.xbitlabs.in/" class="w3-bar-item w3-button w3-text-indigo">About</a>
+    <a href="http://www.xbitlabs.in/#tutorial" class="w3-bar-item w3-button w3-text-indigo">tutorials</a>
+    <a href="http://www.xbitlabs.in/#service" class="w3-bar-item w3-button w3-text-indigo">Services</a>
+    <a href="http://blog.xbitlabs.in" class="w3-bar-item w3-button w3-text-indigo">Blog</a>
+    <a href="http://www.xbitlabs.in/#contact" class="w3-bar-item w3-button w3-text-indigo">Contact</a>
+  </div>
+</div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-content" style="max-width:1500px">
+
+<!-- Header -->
+<div class="w3-opacity">
+<span class="w3-button w3-xxlarge w3-white w3-right" onclick="w3_open()"><i class="fa fa-bars"></i></span>
+<div class="w3-clear"></div>
+<header class="w3-center w3-margin-bottom">
+  <h1><b>K - Photos </b></h1>
+  <p><b>K- Photos XBit Labs</b></p>
+  <p class="w3-padding-16"><button class="w3-button w3-black" onclick="myFunction()">Toggle Grid Padding</button></p>
+
+</header>
+</div>
+
+<!-- Photo Grid -->
+<div class="w3-row" id="myGrid" style="margin-bottom:128px">
+  <div class="w3-third">
+    <img src="images/wide/java.jpeg" style="width:100%">
+    <img src="images/wide/python.jpeg" style="width:100%">
+    <img src="images/wide/xbit_labs_training.jpeg" style="width:100%">
+    <img src="images/wide/xbit_labs_software_training.jpeg" style="width:100%">
+    <img src="images/square/coding-course.jpeg" style="width:100%">
+    <img src="images/square/courses.jpeg" style="width:100%">
   </div>
 
-  <!-- Top section -->
-  <div class="w3-container w3-grey">
-
-    <hr>
-
-    <h3 class="w3-center">Become a programming expert - <i class="fa fa-whatsapp" style="font-size:35px;color:green"></i><a href ="https://wa.me/919625188625?text=I%27m%20interested%20to%20learn%20programming.">"Enquire now"</a></h3>
-    <p align='center'> <h4>Get additional discount of upto 50% : <span id="count_timer" class="w3-red"></span>. Register soon using referral id:  <b>LABX55</b> <a href="https://docs.google.com/forms/d/e/1FAIpQLSdh_VJvsj-hb20pihyq9sQziyOssbijSEP55EwZD7_mnIOVvA/viewform">Course registration form</a>
-<hr>
-
-    </p>
-
-    <!--<img src="images/1004_591/banner-full.jpeg"/>
-
-    <video width="100%" height="100%" controls autoplay>
-      <source src="vids/java.mp4" type="video/mp4">
-    </video>
-    -->
-    <div class="w3-content w3-display-container w3-half">
-      <p>
-
-
-
-
-        <h4>- World's largest e-learning platform</h4>
-          <h2>About Us</h2>
-          <ul>
-            <li>We are dedicated to providing comprehensive software training for individuals seeking to enhance their skills and knowledge in various areas of software development and technology.</li>
-            <li>Our institute offers a wide range of tutorials and courses, covering topics such as:</li>
-            <ul>
-              <li>UI/UX</li>
-              <li>Web Development</li>
-              <li>Web Design</li>
-              <li>And more...</li>
-            </ul>
-            <li>With our experienced instructors and cutting-edge resources, we strive to empower learners to stay ahead in the rapidly evolving tech industry.</li>
-            <li>Join us on this educational journey and unlock your full potential in the world of software development.</li>
-            <li> Students (Any stream ) can join us by filling up this form <a href="https://docs.google.com/forms/d/e/1FAIpQLSdh_VJvsj-hb20pihyq9sQziyOssbijSEP55EwZD7_mnIOVvA/viewform"> Course Registration Link </a>
-
-          </ul>
-
-      </p>
-    </div>
-    <div class="w3-content w3-display-container w3-half w3-left">
-      <img class="mySlides" src="images/1004_591/xbit_labs_software_training.jpeg" style="width:100%">
-      <img class="mySlides" src="Image/img2.jpg" style="width:100%">
-      <img class="mySlides" src="Image/img3.jpg" style="width:100%">
-      <img class="mySlides" src="Image/img4.png" style="width:100%">
-
-      <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
-      <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
-
-      <p><button class="w3-button w3-light-grey w3-block" onclick="window.location.href='http://training.xbitlabs.in';"">Enroll for Software Training </button></p>
-    </div>
+  <div class="w3-third">
+    <img src="images/square/c-programming.jpeg" style="width:100%">
+    <img src="images/square/cprogramming.jpeg" style="width:100%">
+    <img src="images/square/learn-programming.jpeg" style="width:100%">
+    <img src="images/square/online-course-xbl.jpeg" style="width:100%">
+    <img src="images/square/software-engg.jpeg" style="width:100%">
+    <img src="images/square/software-engg-institute.jpeg" style="width:100%">
   </div>
 
-  <!-- Grid 1-->
-  <div class="w3-row-padding" id="tutorial">
-    <div class="w3-center w3-padding-64">
-      <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">Tutorials</span>
-    </div>
-
-    <p>
-    <h1>Website development courses </h1>
-    </p>
-    <div class="w3-third w3-margin-bottom">
-      <div class="w3-card-4">
-        <div class="w3-container">
-          <h3>Learn UI/UX</h3>
-          <p class="w3-opacity">Learn UI and UX</p>
-          <p>UI and UX</p>
-        </div>
-        <img src="Image/img1.jpg" alt="" style="width:100%">
-
-        <p>
-          <button class="w3-button w3-light-grey w3-block" onclick="window.location.href='courses/ui_ux.html';">
-            Course structure
-          </button>
-        </p>
-
-      </div>
-    </div>
-
-    <div class="w3-third w3-margin-bottom">
-      <div class="w3-card-4">
-        <div class="w3-container">
-          <h3>Learn Web development</h3>
-          <p class="w3-opacity">Learn latest web technologies - HTML, CSS, JavaScript</p>
-          <p>Web - Responsive</p>
-          <img src="Image/img2.jpg" alt="" style="width:100%">
-          <p><button class="w3-button w3-light-grey w3-block" onclick="window.location.href='courses/web_dev.html';">Course structure</button></p>
-        </div>
-      </div>
-    </div>
-
-    <div class="w3-third w3-margin-bottom">
-      <div class="w3-card-4">
-        <div class="w3-container">
-          <h3>Learn Web designing</h3>
-          <p class="w3-opacity">Material, frontend, HTML, graphics</p>
-          <p>Frontend</p>
-          <img src="Image/img5.png" alt="" style="width:100%">
-          <p><button class="w3-button w3-light-grey w3-block" onclick="window.location.href='courses/web_design.html';">Course structure</button></p>
-        </div>
-      </div>
-    </div>
-
-    <p>
-    <h2>Programming courses </h2>
-    </p>
-
-    <div class="w3-third w3-margin-bottom">
-      <div class="w3-card-4">
-        <div class="w3-container">
-          <h3>Learn C Programming</h3>
-          <p class="w3-opacity">Pointers, Structures, arrays</p>
-          <p>C</p>
-          <img src="images/1280_720/c.jpeg" alt="" style="width:100%">
-          <p><button class="w3-button w3-light-grey w3-block" onclick="window.location.href='courses/code/c.html';">Course structure</button></p>
-        </div>
-      </div>
-    </div>
-
-    <div class="w3-third w3-margin-bottom">
-      <div class="w3-card-4">
-        <div class="w3-container">
-          <h3>Learn C++ Programming</h3>
-          <p class="w3-opacity">classes, objects, polymorphism</p>
-          <p>C++</p>
-          <img src="images/1280_720/c.jpeg" alt="" style="width:100%">
-          <p><button class="w3-button w3-light-grey w3-block" onclick="window.location.href='courses/code/cpp.html';">Course structure</button></p>
-        </div>
-      </div>
-    </div>
-
-
-    <div class="w3-third w3-margin-bottom">
-      <div class="w3-card-4">
-        <div class="w3-container">
-          <h3>Learn Python Programming </h3>
-          <p class="w3-opacity">lists, dictionaries, tuples, functions, classes</p>
-          <p>Python</p>
-          <img src="images/1280_720/python.jpeg" alt="" style="width:100%">
-          <p><button class="w3-button w3-light-grey w3-block" onclick="window.location.href='courses/code/python.html';">Course structure</button></p>
-        </div>
-      </div>
-    </div>
-
-
-    <div class="w3-third w3-margin-bottom">
-      <div class="w3-card-4">
-        <div class="w3-container">
-          <h3>Learn Java Programming </h3>
-          <p class="w3-opacity">OOP, classes, objects</p>
-          <p>Java</p>
-          <img src="images/1280_720/java.jpeg" alt="" style="width:100%">
-          <p><button class="w3-button w3-light-grey w3-block" onclick="window.location.href='courses/code/java.html';">Course structure</button></p>
-        </div>
-      </div>
-    </div>
-
-
+  <div class="w3-third">
+    <img src="images/square/website-design.jpeg" style="width:100%">
+    <img src="images/square/xbitlabs.jpeg" style="width:100%">
+    <img src="images/square/xbitlabs-services.jpeg" style="width:100%">
+    <img src="images/square/java.jpeg" style="width:100%">
+    <img src="images/square/python.jpg" style="width:100%">
+    <img src="images/square/workshop.jpg" style="width:100%">
   </div>
+</div>
+
+<!-- End Page Content -->
+</div>
 
 
-  <!-- Grid 2-->
-  <div class="w3-row-padding" id="service">
-    <div class="w3-center w3-padding-64">
-      <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">Services</span>
-    </div>
-
-    <div class="w3-third w3-margin-bottom">
-      <div class="w3-card-4">
-        <img src="Image/univ.jpg" alt="" style="width:100%">
-        <div class="w3-container">
-          <h3>Programming Workshops / Trainings for Educational Institutes</h3>
-          <p class="w3-opacity">Specifically crafted hands on programming sessions through workshops and trainings for schools and colleges </p>
-          <p>Any school or educational institute can get in touch with us for any query </p>
-          <p><button class="w3-button w3-light-grey w3-block" onclick="">Partner with us</button></p>
-        </div>
-      </div>
-    </div>
-
-    <div class="w3-third w3-margin-bottom">
-      <div class="w3-card-4">
-        <img src="Image/course1.jpg" alt="" style="width:100%">
-        <div class="w3-container">
-          <h3>IT / Software Services</h3>
-          <p class="w3-opacity">Services related to web and programming to businesses</p>
-          <p>We also provide low cost services in website development and other software services as per the requirements</p>
-          <p><button class="w3-button w3-light-grey w3-block">Course structure</button></p>
-        </div>
-      </div>
-    </div>
-
-    <div class="w3-third w3-margin-bottom">
-      <div class="w3-card-4">
-        <img src="Image/assist1.jpeg" alt="" style="width:100%">
-        <div class="w3-container">
-          <h3>Job Assistance</h3>
-          <p class="w3-opacity">We also help students for their career guidance wthout any additional charges </p>
-          <p>We employ our students to work with us and also help them in various competitive exams for other companies as well</p>
-          <p><button class="w3-button w3-light-grey w3-block">job assistance</button></p>
-        </div>
-      </div>
-    </div>
-
-
-
+<!-- Footer -->
+<footer class="w3-padding-16 w3-light-grey w3-large">
+  <div class="w3-Left  w3-hide-small">
+    <a href="http://www.xbitlabs.in/" class="w3-bar-item w3-button w3-text-grey">Home</a>
+    <a href="http://www.xbitlabs.in/" class="w3-bar-item w3-button w3-text-grey">About</a>
+    <a href="http://www.xbitlabs.in/#tutorial" class="w3-bar-item w3-button w3-text-grey">Tutorials</a>
+    <a href="http://www.xbitlabs.in/#service" class="w3-bar-item w3-button w3-text-grey">Services</a>
+    <a href="http://blog.xbitlabs.in" class="w3-bar-item w3-button w3-text-grey">Blog</a>
+    <a href="http://www.xbitlabs.in/#contact" class="w3-bar-item w3-button w3-text-grey">Contact</a>
   </div>
+  <p class="w3-center w3-text-grey">
+    <a href="https://www.facebook.com/xbitlabs"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+    <a href="https://www.youtube.com/@XBitLabs"><i class="fa fa-youtube w3-hover-opacity"></i></a>
+    <br>
+    <br>
+    &copy; Powered by <a href="http://xbitlabs.in" title="xbitlabs.in" target="_blank"
+      class="w3-hover-text-blue">XBit Labs -  xbitlabs.in</a>
+  </p>
+</footer>
 
-  <div id="contact" class="w3-center">
-    <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">Contact us</span>
-    <p class="w3-center">
-      <br>
-      <br>
-      <!--Find us on Facebook-->
-    </p>
-    <p class="w3-center">
-      <!--<a href="#fblink" class="w3-bar-item w3-button w3-black"><b>Facebook</b></a>-->
-      <h4>Have any questions ?<br><br>
-        Reach us at :<br>
-        <a href ="https://wa.me/919625188625?text=I%27m%20interested%20to%20learn%20programming.">
-          <i class="fa fa-whatsapp" style="font-size:35px;color:green"></i>
-           91 9625199625  </a>
-        <br>
-        or
-        <a href="mailto:labsxbit@gmail.com">
-          <i class="fa fa-envelope"></i> Email
-        </a>
-      </h4>
+<script>
+// Toggle grid padding
+function myFunction() {
+  var x = document.getElementById("myGrid");
+  if (x.className === "w3-row") {
+    x.className = "w3-row-padding";
+  } else {
+    x.className = x.className.replace("w3-row-padding", "w3-row");
+  }
+}
 
-      <a href="https://www.facebook.com/xbitlabs" class="fa fa-facebook"></a>
-      <a href="https://www.youtube.com/@XBitLabs" class="fa fa-youtube"></a>
-      
-    </p>
-  </div>
+// Open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.width = "100%";
+  document.getElementById("mySidebar").style.display = "block";
+}
 
-  <!-- Footer -->
-  <footer class="w3-padding-16 w3-indigo">
-    <div class="w3-Left  w3-hide-small">
-      <a href="#" class="w3-bar-item w3-button w3-text-green">Home</a>
-      <a href="#" class="w3-bar-item w3-button w3-text-green">About</a>
-      <a href="#tutorial" class="w3-bar-item w3-button w3-text-green">Tutorials</a>
-      <a href="#service" class="w3-bar-item w3-button w3-text-green">Services</a>
-      <a href="http://blog.xbitlabs.in" class="w3-bar-item w3-button w3-text-green">Blog</a>
-      <a href="#contact" class="w3-bar-item w3-button w3-text-green">Contact</a>
-    </div>
-    <p class="w3-center w3-text-green">Copyright &copy; 2023 <a href="http://xbitlabs.in" title="xbitlabs.in" target="_blank"
-        class="w3-hover-text-green">XBit Labs -  xbitlabs.in</a></p>
-  </footer>
-
-  <script>
-    var slideIndex = 1;
-    showDivs(slideIndex);
-
-    function plusDivs(n) {
-      showDivs(slideIndex += n);
-    }
-
-    function showDivs(n) {
-      var i;
-      var x = document.getElementsByClassName("mySlides");
-      if (n > x.length) {
-        slideIndex = 1
-      }
-      if (n < 1) {
-        slideIndex = x.length
-      }
-      for (i = 0; i < x.length; i++) {
-        x[i].style.display = "none";
-      }
-      x[slideIndex - 1].style.display = "block";
-    }
-
-
-  </script>
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+</script>
 
 </body>
-
 </html>
-
